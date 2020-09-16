@@ -34,3 +34,31 @@ print(2 ** 5)
 import math # by convention, all imports should be at
 # the top of the file
 print(math.pow(2, 5))
+
+def two_bool(list_one,list_two):
+  if len(list_one) == 0 and len(list_two) == 0:
+    return False
+  else:
+    sameFirst = False
+    sameLast = False
+    if list_one[0] == list_two[0]:
+      sameFirst = True
+ 
+    if list_one[len(list_one)-1] == list_two[len(list_two)-1]:
+      sameLast = True
+  return sameFirst, sameLast
+  
+  
+  random_list = random.randrange(1,10,20)
+  print(random_list)
+  i = 0
+  j = 1
+  for list_numbers in random_list:
+    new_list = []
+    if list_numbers[i] > list_numbers[j]:
+      new_list[i] = list_numbers[j]
+      new_list[j] = list_numbers[i]
+      i+=1
+      j+=1
+     
+    

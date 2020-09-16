@@ -60,5 +60,13 @@ def two_bool(list_one,list_two):
       new_list[j] = list_numbers[i]
       i+=1
       j+=1
+  smallest_num = new_list[0]
+  largest_num = new_list[-1]
+  print("smallest is:",smallest_num)
+  print("largest is:", largest_num)
+  
+  
+  
+  
      
     
